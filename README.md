@@ -16,6 +16,7 @@ visualize - visualize a dataset using PCL's native viewer
 ascii2pcd - convert an ASCII point cloud to a PCD file
 
 # Installation 
+git clone https://github.com/kaziida24/fractal
 mkdir build
 cd build
 cmake ..
