@@ -2,7 +2,7 @@
 # Written by Kazuaki Iida
 # 7/8/16
 
-# Dependencies
+### Dependencies
 CMake (should be standard on Ubuntu)
 PCL (for point cloud processing and visualization)
 Eigen 
@@ -10,12 +10,15 @@ Boost (should be standard on Ubuntu)
 Python (for plotting)
 MATLAB (for visualization), optional 
 
-# Executables
+### Executables
 fractal - fractal analysis entry program 
 visualize - visualize a dataset using PCL's native viewer
 ascii2pcd - convert an ASCII point cloud to a PCD file
 
-# Installation 
+### Project page
+https://kaziida24.github.io/fractal/
+
+### Installation 
 git clone https://github.com/kaziida24/fractal
 mkdir build
 cd build
