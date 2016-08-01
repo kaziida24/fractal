@@ -23,6 +23,20 @@
 ```bash 
 $ git clone https://github.com/kaziida24/fractal
 ```
+* 先ほどクローンした"fractal"というフォルダの中に移動して、"build"というフォルダを作成し、"build"の中に移動する。
+```bash
+$ cd fractal 
+$ mkdir build
+$ cd build 
+```
+* CMakeを用いてMakefileを作成し、PythonとMATLABのスクリプトをコピーする。
+```bash
+$ cmake ..
+```
+* *make* でプログラムをコンパイルする。
+```bash 
+$ make all 
+```
 
 
 ## 使用例  
