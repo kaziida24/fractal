@@ -7,7 +7,7 @@ Updated 8/1/16
 
 ## Table of Contents
 - [Summary](#summary)
-  - [C++ executables](#c++-executables)
+  - [C++ executables](#c&plus&plus-executables)
   - [Python and MATLAB scripts](#python-and-matlab-scripts)
 - [Dependencies](#dependencies)
 - [Installation](#installation)
