@@ -1,9 +1,10 @@
-# README file for fractal code 
-### Written by Kazuaki Iida
-### 7/8/16
+# Fractal Analysis code documentation 
+Written by Kazuaki Iida
+
+Updated 7/31/16
 
 ### Dependencies
-CMake (should be standard on Ubuntu) +##
+CMake (should be standard on Ubuntu) 
 PCL (for point cloud processing and visualization)
 Eigen 
 Boost (should be standard on Ubuntu)
