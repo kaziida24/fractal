@@ -3,7 +3,19 @@ Status: Experimental
 Written by Kazuaki Iida  
 Updated 7/31/16  
 
-### Dependencies
+## Table of Contents
+- [Summary](#summary)
+- [Dependencies](#dependencies)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Questions](#questions)
+
+## Summary
+fractal - fractal analysis entry program  
+visualize - visualize a dataset using PCL's native viewer  
+ascii2pcd - convert an ASCII point cloud to a PCD file 
+
+## Dependencies
 CMake (should be standard on Ubuntu)  
 PCL (for point cloud processing and visualization)  
 Eigen  
@@ -11,22 +23,14 @@ Boost (should be standard on Ubuntu)
 Python (for plotting)  
 MATLAB (for visualization), optional  
 
-### Executables
-fractal - fractal analysis entry program  
-visualize - visualize a dataset using PCL's native viewer  
-ascii2pcd - convert an ASCII point cloud to a PCD file  
-
-### Project page
-https://kaziida24.github.io/fractal/  
-
-### Installation 
+## Installation 
 git clone https://github.com/kaziida24/fractal  
 mkdir build  
 cd build  
 cmake ..  
-make all  
+make all 
 
-# Notes
+## Usage
 Usage: Run fractal with the filename of the dataset 
 Before running fractal, make sure input file is PCD file. ASCII to PCD converter included
 
@@ -61,11 +65,19 @@ Help for fractal
 Help for visualize 
 ./visualize -h
 
-
-# Steps
+### Steps
 1. Parse input file 
 2. Load point cloud and parse into x, y, z coordinates 
 3. Create occupancy grid 
 4. Perform fractal analysis to determine N and R
 5. Write results to file 
-6. If choose MATLAB for plotting, end program. Otherwise, plot in python 
+6. If choose MATLAB for plotting, end program. Otherwise, plot in python
+
+## Questions
+### Project page
+https://kaziida24.github.io/fractal/
+
+
+
+
+ 
