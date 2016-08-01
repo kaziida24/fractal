@@ -1,6 +1,5 @@
 # Fractal Analysis code documentation 
 Written by Kazuaki Iida
-
 Updated 7/31/16
 
 ### Dependencies
