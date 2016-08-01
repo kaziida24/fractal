@@ -40,21 +40,23 @@ point cloud visualizations.
 5. Python and/or MATLAB (for plotting and optional visualization)
 
 ## Installation
-1. Clone the repository to local computer.  
+*The following installation has only been checked on Ubuntu 14.04.*  
+
+* Clone the repository to local computer.  
 ```bash
 $ git clone https://github.com/kaziida24/fractal
 ```  
-2. Move into the fractal directory, make a "build" directory, and move into the "build" directory.
+* Move into the fractal directory, make a "build" directory, and move into the "build" directory.
 ```bash
 $ cd fractal
 $ mkdir build
 $ cd build
 ```  
-3. Call CMake to autogenerate the Makefile and the MATLAB and Python scripts.  
+* Call CMake to autogenerate the Makefile and the MATLAB and Python scripts.  
 ```bash
 $ cmake ..
 ```  
-4. Build the project using make. 
+* Build the project using make. 
 ```bash
 $ make all 
 ```  
