@@ -1,6 +1,6 @@
-# README 日本語
+# フラクタル解析プログラム説明書
 ステータス：プロトタイプ  
-飯田一鑑作  
+飯田一鑑  
 
 ## 目次
 - [概要](#gaiyou)  
@@ -18,4 +18,6 @@
 ## 使用例  
 
 ## ご質問
+プロジェクトぺージ: https://kaziida24.github.io/fractal
+Eメール: kiida2@illinois.edu
 
