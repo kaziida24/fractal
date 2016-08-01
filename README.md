@@ -23,8 +23,11 @@ Boost (should be standard on Ubuntu)
 Python (for plotting)  
 MATLAB (for visualization), optional  
 
-## Installation 
-git clone https://github.com/kaziida24/fractal  
+## Installation
+1. Clone the repository to local computer.  
+'''bash
+$ git clone https://github.com/kaziida24/fractal
+'''
 mkdir build  
 cd build  
 cmake ..  
