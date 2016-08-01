@@ -7,8 +7,8 @@ Updated 8/1/16
 
 ## Table of Contents
 - [Summary](#summary)
-  - [C++ executables](#cpp-executables)
-  - [Python and MATLAB scripts](#python-and-MATLAB-scripts)
+  - [C++ executables](#c++-executables)
+  - [Python and MATLAB scripts](#python-and-matlab-scripts)
 - [Dependencies](#dependencies)
 - [Installation](#installation)
 - [Usage](#usage)
@@ -16,7 +16,7 @@ Updated 8/1/16
   - [Running the fractal analysis main program](#fractal-run)
   - [Visualize a dataset using PCL's native viewer](#visualize)
   - [Getting help](#getting-help)
-- [Questions and Contact Information](#questions)
+- [Questions and Contact Information](#questions-and-contact-information)
 
 ## Summary
 
