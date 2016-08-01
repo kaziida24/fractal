@@ -27,11 +27,11 @@ point cloud visualizations.
 *plot_fractal.m* - same as *plot_fractal.py* but in MATLAB instead of Python  
 *visualizeDataset.m* - renders any point cloud dataset using the MATLAB viewer. You will need the computer vision toolbox to use this.  
 ## Dependencies
-CMake 
-PCL (for point cloud processing and visualization)  
-Eigen  
-Boost 
-Python and/or MATLAB (plotting and optional visualization)
+1. CMake  
+2. PCL (for point cloud processing and visualization)
+3. Eigen
+4. Boost
+5. Python and/or MATLAB (for plotting and optional visualization)
 
 ## Installation
 1. Clone the repository to local computer.  
@@ -95,6 +95,5 @@ $ ./visualize -h
 ```
 
 ## Questions and Contact Information 
-### Project page
-https://kaziida24.github.io/fractal/  
-kiida2@illinois.edu
+Project page: https://kaziida24.github.io/fractal/  
+Email: kiida2@illinois.edu
