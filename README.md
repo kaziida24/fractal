@@ -25,13 +25,23 @@ MATLAB (for visualization), optional
 
 ## Installation
 1. Clone the repository to local computer.  
-'''bash
+```bash
 $ git clone https://github.com/kaziida24/fractal
-'''
-mkdir build  
-cd build  
-cmake ..  
-make all 
+```  
+2. Move into the fractal directory, make a "build" directory, and move into the "build" directory.
+```bash
+$ cd fractal
+$ mkdir build
+$ cd build
+```  
+3. Call CMake to autogenerate the Makefile and the MATLAB and Python scripts.  
+```bash
+$ cmake ..
+```  
+4. Build the project using make. 
+```bash
+$ make all 
+```  
 
 ## Usage
 Usage: Run fractal with the filename of the dataset 
