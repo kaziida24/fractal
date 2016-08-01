@@ -7,7 +7,7 @@ Updated 8/1/16
 
 ## Table of Contents
 - [Summary](#summary)
-  - [C++ executables](#c\+\+-executables)
+  - [C\+\+ executables](#c\+\+-executables)
   - [Python and MATLAB scripts](#python-and-matlab-scripts)
 - [Dependencies](#dependencies)
 - [Installation](#installation)
@@ -20,7 +20,7 @@ Updated 8/1/16
 
 ## Summary
 
-### C++ executables
+### C\+\+ executables
 *fractal* - fractal analysis entry program (performs fractal analysis on a given 3D dataset)  
 *visualize* - visualize a dataset using PCL's native viewer  
 *ascii2pcd* - convert an ASCII point cloud to a PCD file 
