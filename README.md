@@ -3,6 +3,8 @@ Status: Experimental
 Written by Kazuaki Iida  
 Updated 7/31/16  
 
+*Read this in Japanese: [日本語版ガイド](README.ja.md)  
+
 ## Table of Contents
 - [Summary](#summary)
 - [Dependencies](#dependencies)
