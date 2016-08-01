@@ -12,12 +12,17 @@
 ## 概要
 
 ## 必須ライブラリ  
+* CMake
+* PCL (ポイントクラウドライブラリ)
+* Eigen
+* Boost
+* PythonかMATLAB (プロット作成のため）
 
 ## インストール  
 
 ## 使用例  
 
 ## ご質問
-プロジェクトぺージ: https://kaziida24.github.io/fractal
+プロジェクトぺージ: https://kaziida24.github.io/fractal  
 Eメール: kiida2@illinois.edu
 
