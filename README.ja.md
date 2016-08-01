@@ -21,6 +21,7 @@
 * PythonかMATLAB (プロット作成のため）
 
 ## インストール法  
+*以下のインストール法はUbuntu 14.04でしか確かめられておりません。*
 * Github上のレポジトリをコンピューターにクローンする。
 ```bash 
 $ git clone https://github.com/kaziida24/fractal
