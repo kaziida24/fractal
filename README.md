@@ -7,10 +7,16 @@ Updated 8/1/16
 
 ## Table of Contents
 - [Summary](#summary)
+  - [C++ executables](#cpp-executables)
+  - [Python and MATLAB scripts](#python-and-MATLAB-scripts)
 - [Dependencies](#dependencies)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Questions](#questions)
+  - [Converting an ASCII file to a more PCL friendly PCD file](#conversion)
+  - [Running the fractal analysis main program](#fractal-run)
+  - [Visualize a dataset using PCL's native viewer](#visualize)
+  - [Getting help](#getting-help)
+- [Questions and Contact Information](#questions)
 
 ## Summary
 
