@@ -1,29 +1,29 @@
 # Fractal Analysis code documentation 
-Written by Kazuaki Iida
-Updated 7/31/16
+Written by Kazuaki Iida  
+Updated 7/31/16  
 
 ### Dependencies
-CMake (should be standard on Ubuntu) 
-PCL (for point cloud processing and visualization)
-Eigen 
-Boost (should be standard on Ubuntu)
-Python (for plotting)
-MATLAB (for visualization), optional 
+CMake (should be standard on Ubuntu)  
+PCL (for point cloud processing and visualization)  
+Eigen  
+Boost (should be standard on Ubuntu)  
+Python (for plotting)  
+MATLAB (for visualization), optional  
 
 ### Executables
-fractal - fractal analysis entry program 
-visualize - visualize a dataset using PCL's native viewer
-ascii2pcd - convert an ASCII point cloud to a PCD file
+fractal - fractal analysis entry program  
+visualize - visualize a dataset using PCL's native viewer  
+ascii2pcd - convert an ASCII point cloud to a PCD file  
 
 ### Project page
-https://kaziida24.github.io/fractal/
+https://kaziida24.github.io/fractal/  
 
 ### Installation 
-git clone https://github.com/kaziida24/fractal
-mkdir build
-cd build
-cmake ..
-make all
+git clone https://github.com/kaziida24/fractal  
+mkdir build  
+cd build  
+cmake ..  
+make all  
 
 # Notes
 Usage: Run fractal with the filename of the dataset 
