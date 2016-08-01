@@ -13,17 +13,23 @@ Updated 7/31/16
 - [Questions](#questions)
 
 ## Summary
-fractal - fractal analysis entry program  
+Three C++ executables facilitate the use of the fractal analysis program.   
+fractal - fractal analysis entry program (performs fractal analysis on a given 3D dataset)
 visualize - visualize a dataset using PCL's native viewer  
 ascii2pcd - convert an ASCII point cloud to a PCD file 
 
+Additionally, Python and MATLAB scripts faciliate post-processing the fractal analysis results as well as provide an alternative to
+point cloud visualizations. 
+
+plot_fractal.py - post-process fractal analysis results by creating a plot and estimating the fractal dimension  
+
+
 ## Dependencies
-CMake (should be standard on Ubuntu)  
+CMake 
 PCL (for point cloud processing and visualization)  
 Eigen  
-Boost (should be standard on Ubuntu)  
-Python (for plotting)  
-MATLAB (for visualization), optional  
+Boost 
+Python and/or MATLAB (plotting and optional visualization)
 
 ## Installation
 1. Clone the repository to local computer.  
