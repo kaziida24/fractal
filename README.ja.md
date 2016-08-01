@@ -2,7 +2,7 @@
 ステータス：プロトタイプ  
 飯田一鑑  
 
-*Access this guide in English: (README.md)*
+*[Access this guide in English]: (README.md)*
 
 ## 目次
 - [概要](#概要)  
