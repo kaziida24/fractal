@@ -1,4 +1,5 @@
 # Fractal Analysis code documentation 
+Status: Experimental  
 Written by Kazuaki Iida  
 Updated 7/31/16  
 
