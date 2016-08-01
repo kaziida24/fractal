@@ -19,6 +19,11 @@
 * PythonかMATLAB (プロット作成のため）
 
 ## インストール法  
+* Github上のレポジトリをコンピューターにクローンする。
+```bash 
+$ git clone https://github.com/kaziida24/fractal
+```
+
 
 ## 使用例  
 
