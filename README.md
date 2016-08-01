@@ -3,7 +3,7 @@ Status: Experimental
 Written by Kazuaki Iida  
 Updated 7/31/16  
 
-*Read this in Japanese: [日本語版ガイド](README.ja.md)  
+*Read this in Japanese: [日本語版ガイド](README.ja.md)*  
 
 ## Table of Contents
 - [Summary](#summary)
@@ -14,14 +14,15 @@ Updated 7/31/16
 
 ## Summary
 Three C++ executables facilitate the use of the fractal analysis program.   
-fractal - fractal analysis entry program (performs fractal analysis on a given 3D dataset)
-visualize - visualize a dataset using PCL's native viewer  
-ascii2pcd - convert an ASCII point cloud to a PCD file 
+*fractal* - fractal analysis entry program (performs fractal analysis on a given 3D dataset)  
+*visualize* - visualize a dataset using PCL's native viewer  
+*ascii2pcd* - convert an ASCII point cloud to a PCD file 
 
 Additionally, Python and MATLAB scripts faciliate post-processing the fractal analysis results as well as provide an alternative to
 point cloud visualizations. 
 
-plot_fractal.py - post-process fractal analysis results by creating a plot and estimating the fractal dimension  
+*plot_fractal.py* - post-process fractal analysis results by creating a plot and estimating the fractal dimension  
+
 
 
 ## Dependencies
