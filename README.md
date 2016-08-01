@@ -14,7 +14,7 @@ Updated 8/1/16
 - [Usage](#usage)
   - [Converting an ASCII file to a more PCL friendly PCD file](#converting-an-ascii-file-to-a-more-pcl-friendly-pcd-file)
   - [Running the fractal analysis main program](#running-the-fractal-analysis-main-program)
-  - [Visualize a dataset using PCL's native viewer](#visualize-a-dataset-using-PCL's-native-viewer)
+  - [Visualize a dataset using the PCL native viewer](#visualize-a-dataset-using-the-pcl-native-viewer)
   - [Getting help](#getting-help)
 - [Questions and Contact Information](#questions-and-contact-information)
 
@@ -75,7 +75,7 @@ Call the *fractal* executable along with the filename of the input PCD file, as 
 $ ./fractal dataset.pcd output.txt
 ```
 
-### Visualize a dataset using PCL's native viewer
+### Visualize a dataset using the PCL native viewer  
 Call the *visualize* executable along with the filename of the PCD file you would like to visualize. 
 ```bash
 $ ./visualize dataset.pcd 
