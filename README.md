@@ -12,9 +12,9 @@ Updated 8/1/16
 - [Dependencies](#dependencies)
 - [Installation](#installation)
 - [Usage](#usage)
-  - [Converting an ASCII file to a more PCL friendly PCD file](#conversion)
-  - [Running the fractal analysis main program](#fractal-run)
-  - [Visualize a dataset using PCL's native viewer](#visualize)
+  - [Converting an ASCII file to a more PCL friendly PCD file](#converting-an-ascii-file-to-a-more-pcl-friendly-pcd-file)
+  - [Running the fractal analysis main program](#running-the-fractal-analysis-main-program)
+  - [Visualize a dataset using PCL's native viewer](#visualize-a-dataset-using-PCL's-native-viewer)
   - [Getting help](#getting-help)
 - [Questions and Contact Information](#questions-and-contact-information)
 
