@@ -1,7 +1,7 @@
 # Fractal Analysis code documentation 
 Status: Experimental  
 Written by Kazuaki Iida  
-Updated 7/31/16  
+Updated 8/1/16  
 
 *Read this in Japanese: [日本語版ガイド](README.ja.md)*  
 
@@ -13,18 +13,19 @@ Updated 7/31/16
 - [Questions](#questions)
 
 ## Summary
-Three C++ executables facilitate the use of the fractal analysis program.   
+
+### C++ executables
 *fractal* - fractal analysis entry program (performs fractal analysis on a given 3D dataset)  
 *visualize* - visualize a dataset using PCL's native viewer  
 *ascii2pcd* - convert an ASCII point cloud to a PCD file 
 
+### Python and MATLAB scripts
 Additionally, Python and MATLAB scripts faciliate post-processing the fractal analysis results as well as provide an alternative to
 point cloud visualizations. 
 
 *plot_fractal.py* - post-process fractal analysis results by creating a plot and estimating the fractal dimension  
-
-
-
+*plot_fractal.m* - same as *plot_fractal.py* but in MATLAB instead of Python  
+*visualizeDataset.m* - renders any point cloud dataset using the MATLAB viewer. You will need the computer vision toolbox to use this.  
 ## Dependencies
 CMake 
 PCL (for point cloud processing and visualization)  
@@ -52,54 +53,48 @@ $ cmake ..
 $ make all 
 ```  
 
-## Usage
-Usage: Run fractal with the filename of the dataset 
-Before running fractal, make sure input file is PCD file. ASCII to PCD converter included
+## Usage  
 
-2 command line arguments. First argument specifies name of PCD file to be analyzed. 
-Second argument is a flag that specifies whether a matplotlib plot needs to be generated or not. 
+### Converting an ASCII file to a more PCL friendly PCD file
+Call the *ascii2pcd* executable along with the filename of the dataset.  
 
-Example: 
+Example: This command takes an ASCII file called *dataset.txt* and creates a PCD file called *dataset.pcd*. 
+```bash
+$ ./ascii2pcd dataset.txt 
+```
+### Running the fractal analysis main program
+Call the *fractal* executable along with the filename of the input PCD file, as well as the filename of the output file. 
 
-Run without plotting (from ASCII file converison step)
+```bash 
+$ ./fractal dataset.pcd output.txt
+```
 
-./ascii2pcd dataset.txt
-./fractal dataset.pcd output.txt
+### Visualize a dataset using PCL's native viewer
+Call the *visualize* executable along with the filename of the PCD file you would like to visualize. 
+```bash
+$ ./visualize dataset.pcd 
+```
 
-Run with plot (from ASCII file conversion step)
+### Getting help 
+Any of the executables can be run with the help flag *(-h)* to display the help menu, which explains how 
+to run the executable and what command line arguments to include. 
 
-./ascii2pcd dataset.txt
-./fractal dataset.pcd output.txt -p 
+Example: Access help menu for *ascii2pcd*. 
+```bash
+$ ./ascii2pcd -h
+```
 
-Visualize a dataset
+Example: Access help menu for *fractal*. 
+```bash
+$ ./fractal -h
+```
 
-./visualize dataset.pcd 
+Example: Access help menu for *visualize*. 
+```bash
+$ ./visualize -h
+```
 
-Any of the executables can be run with the help flag (-h) to display the help menu, which explains
-how to run the executable and what command line arguments to include 
-
-Help for ascii2pcd
-./ascii2pcd -h 
-
-Help for fractal 
-./fractal -h 
-
-Help for visualize 
-./visualize -h
-
-### Steps
-1. Parse input file 
-2. Load point cloud and parse into x, y, z coordinates 
-3. Create occupancy grid 
-4. Perform fractal analysis to determine N and R
-5. Write results to file 
-6. If choose MATLAB for plotting, end program. Otherwise, plot in python
-
-## Questions
+## Questions and Contact Information 
 ### Project page
-https://kaziida24.github.io/fractal/
-
-
-
-
- 
+https://kaziida24.github.io/fractal/  
+kiida2@illinois.edu
