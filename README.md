@@ -1,7 +1,6 @@
 # Fractal Analysis code documentation 
 Status: Experimental  
 Written by Kazuaki Iida  
-Updated 8/1/16  
 
 *Read this in Japanese: [日本語版ガイド](README.ja.md)*  
 
