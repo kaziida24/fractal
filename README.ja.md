@@ -65,6 +65,12 @@ $ make all
 
 ### ASCIIファイルをPCDファイルに変換
 
+*ascii2pcd*プログラムと同時にASCIIファイル名を入力し、新しくPCDファイルが作成されます。
+```bash
+$ ./ascii2pcd filename.txt
+```
+こちらのコマンドは*filename.txt*というASCIIファイルから*filename.pcd*というPCDファイルを作成します。
+
 ### フラクタル解析コアプログラムを使う
 
 ### PCLを使用してポイントクラウドファイルを視覚化
