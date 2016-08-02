@@ -73,9 +73,36 @@ $ ./ascii2pcd filename.txt
 
 ### フラクタル解析コアプログラムを使う
 
+*fractal*プログラムと同時に解析を行うPCDファイル名を入力します。
+```bash
+$ ./fractal filename.pcd
+```
+この場合、フラクタル解析の結果は*filename_output.txt*というファイルに保存されます。
+
 ### PCLを使用してポイントクラウドファイルを視覚化
 
+*visualize*プログラムと同時に視覚化するポイントクラウドファイル名を入力します。
+```bash
+$ ./visualize filename.pcd
+```
+
 ### ヘルプメニューを引き出す
+
+全てのプログラムは*-h*を同時に入力すると案内画面が表示されます。  
+
+*fractal*の案内画面
+```bash
+$ ./fractal -h
+```
+*visualize*の案内画面
+```bash
+$ ./visualize -h
+```
+
+*ascii2pcd*の案内画面
+```bash
+$ ./ascii2pcd -h
+```
 
 ## ご質問のある方
 ご質問のある方は下記のプロジェクトページをご覧になってください。
