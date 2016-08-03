@@ -13,10 +13,12 @@ if (OPENMP_FOUND)
     set (CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${OpenMP_CXX_FLAGS}")
 endif()
 find_package(PCL 1.2 REQUIRED)
+find_package(OpenCV REQUIRED)
 
 # Includes 
 include_directories(include 
-					${PCL_INCLUDE_DIRS})
+					${PCL_INCLUDE_DIRS}
+					${OpenCV_INCLUDE_DIRS})
 link_directories(${PCL_LIBRARY_DIRS})
 add_definitions(${PCL_DEFINITIONS})
 
@@ -24,7 +26,8 @@ add_definitions(${PCL_DEFINITIONS})
 set( PROJECT_LINK_LIBS libfractal_lib.so)
 
 LIST(APPEND LINK_LIBS
-	${PCL_LIBRARIES})
+	${PCL_LIBRARIES}
+	${OpenCV_LIBS})
 
 LIST(APPEND SOURCEFILES 
 		src/fractalAnalysis.cpp
@@ -49,10 +52,14 @@ target_link_libraries(ascii2pcd -lpthread ${LINK_LIBS})
 add_executable( fractal_practice src/fractal_practice.cpp)
 target_link_libraries(fractal_practice -lpthread ${LINK_LIBS})
 
+add_executable( fractal2d src/fractal2d.cpp)
+target_link_libraries(fractal2d -lpthread ${LINK_LIBS})
+
 target_link_libraries(fractal -lpthread fractal_lib)
 target_link_libraries(visualize -lpthread fractal_lib)
 target_link_libraries(practice -lpthread fractal_lib)
 target_link_libraries(ascii2pcd -lpthread fractal_lib)
+target_link_libraries(fractal2d -lpthread fractal_lib)
 
 # Copy Python file for plotting
 CONFIGURE_FILE( "src/python/plot_fractal.py" "plot_fractal.py" 
