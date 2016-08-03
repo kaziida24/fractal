@@ -4,6 +4,8 @@
 
 *英語版を閲覧: [English version](README.md)*
 
+![alt text](https://raw.githubusercontent.com/kaziida24/fractal/master/figures/program_overview_ja.png "プログラムの役割")
+
 ## 目次
 - [概要](#概要)  
   - [C++ プログラム](#c-%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%A0)
