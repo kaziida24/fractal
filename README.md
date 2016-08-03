@@ -39,7 +39,7 @@ point cloud visualizations.
 * Python and/or MATLAB (for plotting and optional visualization)
 
 ## Installation
-*The following installation has only been checked on Ubuntu 14.04.*  
+**The following installation has only been checked on Ubuntu 14.04.**  
 
 * Clone the repository to local computer.  
 ```bash
