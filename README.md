@@ -1,8 +1,14 @@
+<!-- A few fractal images here?  -->
 # Fractal Analysis code documentation 
 Status: Experimental  
 Written by Kazuaki Iida  
 
 *Read this in Japanese: [日本語版ガイド](README.ja.md)*  
+
+Capabilities: 
+
+![alt text](https://github.com/kaziida24/fractal/tree/master/figures/fractal_chart_en.png "Summary of Program Capabilities")
+
 
 ## Table of Contents
 - [Summary](#summary)
