@@ -20,6 +20,7 @@ include_directories(include
 link_directories(${PCL_LIBRARY_DIRS})
 add_definitions(${PCL_DEFINITIONS})
 
+# Set shared object and libraries: 
 set( PROJECT_LINK_LIBS libfractal_lib.so)
 
 LIST(APPEND LINK_LIBS
@@ -31,6 +32,7 @@ LIST(APPEND SOURCEFILES
 
 ADD_LIBRARY(fractal_lib SHARED ${SOURCEFILES})
 
+# Link source files: 
 add_executable(fractal src/fractal.cpp)
 target_link_libraries(fractal -lpthread ${LINK_LIBS})
 target_link_libraries(fractal_lib -lpthread ${LINK_LIBS})
