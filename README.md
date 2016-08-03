@@ -7,7 +7,7 @@ Written by Kazuaki Iida
 
 ## Overview of Program
 
-![alt text](https://raw.githubusercontent.com/kaziida24/fractal/master/figures/fractal_chart_en.png "Summary of Program Capabilities")
+![alt text](https://raw.githubusercontent.com/kaziida24/fractal/master/figures/program_overview_en.png "Summary of Program Capabilities")
 
 
 ## Table of Contents
