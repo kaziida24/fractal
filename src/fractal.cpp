@@ -22,6 +22,12 @@ Run fractal analysis on specified PCD file and specified output file
 Show help menu
 ./fractal -h
 
+./fractal filename.pcd 
+
+or 
+
+./fractal -h
+
 Export results of fractal analysis to text file 
 Plot using matplotlib or MATLAB (maybe use a command-line argument)
 
@@ -33,22 +39,25 @@ int main (int argc, char** argv)
 
 	// Parse command-line arguments 
 
-	if (argc != 3)
+	if (argc != 2)
 	{
-		if (argc == 2 && !strcmp(argv[1], help_msg.c_str()))
-		{
-			fractal_help(); 
-		}
-		else
-		{
-			cout << "Check usage again." << endl; 
-		}
-		return -2; 
+		cout << "Check usage again." << endl; 
+		return -1; 
 	}
 	else
 	{
-		filename = argv[1]; 
-		outputFile = argv[2]; 
+		if (!strcmp(argv[1], help_msg.c_str()))
+		{
+			fractal_help(); 
+			return -2; 
+		}
+		else
+		{
+			filename = argv[1]; 
+			int position = int(filename.rfind('.'));
+			string newName = filename.substr(0, position); 
+			outputFile = newName+"_output.txt";  
+		}
 	}
 
 	fullpath = path_addition+filename; 
