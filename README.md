@@ -5,9 +5,7 @@ Written by Kazuaki Iida
 
 *Read this in Japanese: [日本語版ガイド](README.ja.md)*  
 
-Capabilities:  
-
-<!-- ![alt text](https://github.com/kaziida24/fractal/figures/fractal_chart_en.png "Summary of Program Capabilities") -->
+## Overview of Program
 
 ![alt text](https://raw.githubusercontent.com/kaziida24/fractal/master/figures/fractal_chart_en.png "Summary of Program Capabilities")
 
