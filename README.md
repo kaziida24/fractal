@@ -27,8 +27,8 @@ Written by Kazuaki Iida
 ## Summary
 
 ### C\+\+ executables
-*fractal3d* - fractal analysis program for 3D dataset
 *fractal2d* - fractal analysis program for image (2D pattern)  
+*fractal3d* - fractal analysis program for 3D dataset  
 *visualize* - visualize a 3D dataset using PCL's native viewer  
 *ascii2pcd* - convert an ASCII point cloud to a PCD file 
 
