@@ -36,8 +36,8 @@ LIST(APPEND SOURCEFILES
 ADD_LIBRARY(fractal_lib SHARED ${SOURCEFILES})
 
 # Link source files: 
-add_executable(fractal src/fractal.cpp)
-target_link_libraries(fractal -lpthread ${LINK_LIBS})
+add_executable(fractal3d src/fractal3d.cpp)
+target_link_libraries(fractal3d -lpthread ${LINK_LIBS})
 target_link_libraries(fractal_lib -lpthread ${LINK_LIBS})
 
 add_executable(visualize src/visualize.cpp)
@@ -55,7 +55,7 @@ target_link_libraries(fractal_practice -lpthread ${LINK_LIBS})
 add_executable( fractal2d src/fractal2d.cpp)
 target_link_libraries(fractal2d -lpthread ${LINK_LIBS})
 
-target_link_libraries(fractal -lpthread fractal_lib)
+target_link_libraries(fractal3d -lpthread fractal_lib)
 target_link_libraries(visualize -lpthread fractal_lib)
 target_link_libraries(practice -lpthread fractal_lib)
 target_link_libraries(ascii2pcd -lpthread fractal_lib)
