@@ -17,8 +17,9 @@ Written by Kazuaki Iida
 - [Dependencies](#dependencies)
 - [Installation](#installation)
 - [Usage](#usage)
+  - [Running the fractal analysis program on an image](#running-the-fractal-analysis-program-on-an-image)
   - [Converting an ASCII file to a more PCL friendly PCD file](#converting-an-ascii-file-to-a-more-pcl-friendly-pcd-file)
-  - [Running the fractal analysis main program](#running-the-fractal-analysis-main-program)
+  - [Running the fractal analysis program on a 3D dataset](#running-the-fractal-analysis-program-on-a-3D-dataset)
   - [Visualize a dataset using the PCL native viewer](#visualize-a-dataset-using-the-pcl-native-viewer)
   - [Getting help](#getting-help)
 - [Questions and Contact Information](#questions-and-contact-information)
@@ -26,8 +27,9 @@ Written by Kazuaki Iida
 ## Summary
 
 ### C\+\+ executables
-*fractal* - fractal analysis entry program (performs fractal analysis on a given 3D dataset)  
-*visualize* - visualize a dataset using PCL's native viewer  
+*fractal3d* - fractal analysis program for 3D dataset
+*fractal2d* - fractal analysis program for image (2D pattern)  
+*visualize* - visualize a 3D dataset using PCL's native viewer  
 *ascii2pcd* - convert an ASCII point cloud to a PCD file 
 
 ### Python and MATLAB scripts
@@ -37,6 +39,7 @@ point cloud visualizations.
 *plot_fractal.py* - post-process fractal analysis results by creating a plot and estimating the fractal dimension  
 *plot_fractal.m* - same as *plot_fractal.py* but in MATLAB instead of Python  
 *visualizeDataset.m* - renders any point cloud dataset using the MATLAB viewer. You will need the computer vision toolbox to use this.  
+
 ## Dependencies
 * CMake  
 * PCL (for point cloud processing and visualization)
@@ -69,6 +72,14 @@ $ make all
 
 ## Usage  
 
+### Running the fractal analysis program on an image
+Call the *fractal2d* executable along with the filename of the input image. The name of the output file will be printed to screen at the end of the program. For example, the following input produces an output file called *image_output.txt*. 
+
+```bash
+$ ./fractal2d image.jpg
+```
+
+
 ### Converting an ASCII file to a more PCL friendly PCD file
 Call the *ascii2pcd* executable along with the filename of the dataset.  
 
@@ -76,11 +87,11 @@ Example: This command takes an ASCII file called *dataset.txt* and creates a PCD
 ```bash
 $ ./ascii2pcd dataset.txt 
 ```
-### Running the fractal analysis main program
-Call the *fractal* executable along with the filename of the input PCD file, as well as the filename of the output file. 
+### Running the fractal analysis program on a 3D dataset
+Call the *fractal3d* executable along with the filename of the input PCD file. The program will print the name of the output file to screen. For example, the following input produces an output file called *dataset_output.txt*. 
 
 ```bash 
-$ ./fractal dataset.pcd output.txt
+$ ./fractal3d dataset.pcd
 ```
 
 ### Visualize a dataset using the PCL native viewer  
@@ -93,14 +104,20 @@ $ ./visualize dataset.pcd
 Any of the executables can be run with the help flag *(-h)* to display the help menu, which explains how 
 to run the executable and what command line arguments to include. 
 
+Example: Access help menu for *fractal2d*. 
+
+```bash
+$ ./fractal2d -h
+``` 
+
 Example: Access help menu for *ascii2pcd*. 
 ```bash
 $ ./ascii2pcd -h
 ```
 
-Example: Access help menu for *fractal*. 
+Example: Access help menu for *fractal3d*. 
 ```bash
-$ ./fractal -h
+$ ./fractal3d -h
 ```
 
 Example: Access help menu for *visualize*. 
