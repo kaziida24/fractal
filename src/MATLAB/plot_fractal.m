@@ -1,9 +1,20 @@
-function plot_fractal(filename)
+function plot_fractal(varargin)
 
-if (nargin ~= 1)
-	fprintf('Please specify the filename of the text file to be plotted.\n'); 
-	return; 
+if (nargin > 2 || nargin == 0)
+	fprintf('Check usage again.\n'); 
+	return;
+elseif (nargin == 1)
+	if (strcmp(varargin{1,1}, '-h'))
+		help_msg(); 
+	else
+		fprintf('Check usage again.\n'); 
+	end
+	return;
+else
+	filename = varargin{1,1}; 
+	sourcename = varargin{1,2}; 
 end
+	
 
 data = dlmread(filename); 
 
@@ -25,14 +36,26 @@ close all force;
 figure(); 
 loglog(data(:,1), data(:,2), 'LineWidth', 4); 
 grid on; 
-title('Log(N) vs. Log(R)');
+title(sprintf('Log(N) vs. Log(R) for %s', sourcename), 'Interpreter', 'none');
 xlabel('Log(R)');
 ylabel('Log(N)');
 
 figure(); 
 semilogx(data(:,1), slope, 'LineWidth', 4); 
 grid on; 
-title('Slope ($-\frac{\partial log(N)}{\partial log(R)}$) vs. log(R)', ... 
-    'interpreter', 'Latex'); 
+title(sprintf('Slope vs. Log(R) for %s', sourcename), 'Interpreter', 'none'); 
+xlabel('Log(R)');
+ylabel('Slope'); 
 
+	function help_msg()
+		fprintf('Welcome to the help message for plot_fractal.\n'); 
+		fprintf('\n');
+		fprintf('Usage:\n\n');
+		fprintf('Call the program along with the name of the output file and the name of the input file.\n'); 
+		fprintf('\nplot_fractal output.txt input.png');
+		fprintf('\nor\n'); 
+		fprintf('plot_fractal output.txt input.pcd');  
+		fprintf('\n\n');  
+
+	end
 end
