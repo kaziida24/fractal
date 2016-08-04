@@ -38,6 +38,7 @@
 ## 必須ライブラリ  
 * CMake
 * PCL (ポイントクラウドライブラリ)
+* OpenCV
 * Eigen
 * Boost
 * PythonかMATLAB (プロット作成のため）

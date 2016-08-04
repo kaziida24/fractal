@@ -40,6 +40,7 @@ point cloud visualizations.
 ## Dependencies
 * CMake  
 * PCL (for point cloud processing and visualization)
+* OpenCV (for 2D analysis and image operations)
 * Eigen
 * Boost
 * Python and/or MATLAB (for plotting and optional visualization)
