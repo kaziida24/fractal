@@ -5,6 +5,7 @@
 #include <fstream>
 #include <string>
 #include <stdio.h>
+#include <stdlib.h>
 #include <math.h>
 
 // OpenCV includes: 
@@ -80,8 +81,6 @@ int main(int argc, char** argv)
 
 	double sumImg = cv::sum(img_bin)[0]; 
 
-	cout << sumImg << endl; 
-
 	N(int(p)) = sumImg; 
 
 	// Init other stuff: 
@@ -135,8 +134,36 @@ int main(int argc, char** argv)
 
     printf("\n"); 
     printf("Analysis complete. Saved results to %s.\n", results_file.c_str()); 
-    printf("Use either plot_fractal.py or plot_fractal.m to post-process and generate plot.\n"); 
+    printf("Use either plot_fractal.py or plot_fractal.m to post-process and generate a plot.\n"); 
     printf("\n"); 
+
+    printf("\n"); 
+    printf("Python:\n"); 
+    printf("python plot_fractal.py %s %s\n", results_file.c_str(), img_name.c_str()); 
+    printf("\n"); 
+
+    printf("\n"); 
+    printf("MATLAB:\n"); 
+    printf("plot_fractal %s %s\n", results_file.c_str(), img_name.c_str()); 
+    printf("\n"); 
+
+    string user_ans; 
+
+    printf("Press y or n for 'yes' or 'no' to answer the following question.\n"); 
+    cout << "Would you like to post-process the results now in Python? (Y/n) "; 
+    getline(cin, user_ans); 
+
+    if (!strcmp(user_ans.c_str(), "y"))
+    {
+    	string python_command = "python plot_fractal.py "+results_file+" "+img_name; 
+    	printf("Post-processing in Python.\n"); 
+    	system(python_command.c_str()); 
+    }
+    else
+    {
+    	printf("Exiting program.\n"); 
+    }
+
 
 	return 0; 
 }
@@ -144,6 +171,18 @@ int main(int argc, char** argv)
 // Help menu function
 void show_help()
 {
-	cout << "This is the help menu." << endl; 
+	printf("\n"); 
+	printf("Welcome to the help menu for fractal2d.\n"); 
+	printf("\n"); 
+	printf("Usage:\n"); 
+	printf("1. Run fractal2d on a specified image.\n");
+	printf("   ./fractal2d image.png\n"); 
+	printf("\n"); 
+	printf("2. Display this help menu again.\n"); 
+	printf("   ./fractal2d -h\n"); 
+	printf("\n"); 
+	printf("Below is a list of image files in the image folder that are available for analysis.\n"); 
+	system("ls ../images"); 
+	printf("\n"); 
 	return; 
-}
+} 
