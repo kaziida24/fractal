@@ -10,8 +10,11 @@ commandArgs = str(sys.argv);
 splitArgs = commandArgs.split(' '); 
 
 if (len(splitArgs) != 3):
-	print("Please provide the output filename and the source PCD filename.\n"); 
-	print("python plot_fractal.py output.txt filename.pcd\n"); 
+	print("Please provide the output filename and the source filename.\n"); 
+	print('python plot_fractal.py output.txt source .png\n'); 
+	print('or\n'); 
+	print("python plot_fractal.py output.txt source.pcd\n");
+
 	sys.exit(); 
 
 filename = splitArgs[1];  
@@ -30,18 +33,25 @@ fp.close();
 # Init N and R (variables to plot): 
 N = numpy.zeros(len(x)); 
 R = numpy.zeros(len(x)); 
+logN = numpy.zeros(len(x)); 
+logR = numpy.zeros(len(x)); 
 slope = numpy.zeros(len(x)); 
 
 for i in range(0, len(x)): 
 	# Fill N and R
 	currentRow = x[i]; 
-	currentRow = currentRow.split(' ');
+	currentRow = currentRow.split(' '); 
 
 	R[i] = float(currentRow[0]); 
-	N[i] = float(currentRow[1]); 
+	N[i] = float(currentRow[1]);
+	if (N[i] == 0): 
+		N[i] = float('NaN'); 
+
+	logR[i] = math.log(R[i], 10); 
+	logN[i] = math.log(N[i], 10);  
 
 for i in range(1, len(x)-1): 
-	slope[i] = -float(math.log(N[i+1], 10)-math.log(N[i], 10))/float(math.log(R[i+1], 10)-math.log(R[i], 10)); 
+	slope[i] = -float(logN[i+1]-logN[i])/float(logR[i+1]-logR[i]); 
 
 slope[0] = float('NaN'); 
 
@@ -59,7 +69,7 @@ plt.ylabel('log(N)');
 
 plt.figure(2); 
 plt.semilogx(R, slope, basex=10); 
-plt.title('Slope plot'); 
+plt.title('Slope plot for %s'% pcdFilename); 
 plt.xlabel('log(R)');
 plt.ylabel('Slope');
 plt.grid(True); 
