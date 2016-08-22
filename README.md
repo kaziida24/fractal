@@ -1,5 +1,5 @@
 <!-- A few fractal images here?  -->
-# Fractal: A General Purpose Architecture for Estimating the Fractal Dimension 
+# Fractal: A General Purpose Architecture for Estimating the Fractal Dimension of any Pattern or Geometry
 Status: Experimental  
 Written by Kazuaki Iida  
 
