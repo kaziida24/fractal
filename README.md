@@ -1,11 +1,13 @@
 <!-- A few fractal images here?  -->
-# Fractal Analysis code documentation 
+# Fractal: A General Purpose Architecture for Estimating the Fractal Dimension 
 Status: Experimental  
 Written by Kazuaki Iida  
 
 *Read this in Japanese: [日本語版ガイド](README.ja.md)*  
 
 ## Overview of Program
+
+Fractal provides a convenient framework to estimate the fractal dimension of any pattern contained in an image, or any geometry contained in a point cloud. 
 
 ![alt text](https://raw.githubusercontent.com/kaziida24/fractal/master/figures/program_overview_en.png "Summary of Program Capabilities")
 
