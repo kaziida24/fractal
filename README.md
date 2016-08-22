@@ -9,7 +9,10 @@ Written by Kazuaki Iida
 
 Fractal provides a convenient framework to estimate the fractal dimension of any pattern contained in an image, or any geometry contained in a point cloud. 
 
+### 2D Input Case
 ![alt text](https://raw.githubusercontent.com/kaziida24/fractal/master/figures/2d_flowchart.png "Summary of Program Capabilities")
+
+
 
 
 ## Table of Contents
