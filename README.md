@@ -12,8 +12,8 @@ Fractal provides a convenient framework to estimate the fractal dimension of any
 ### 2D Input Case
 ![alt text](https://raw.githubusercontent.com/kaziida24/fractal/master/figures/2d_flowchart.png "Summary of Program Capabilities")
 
-
-
+### 3D Input case 
+![alt text](https://raw.githubusercontent.com/kaziida24/fractal/master/figures/3d_flowchart.png "Summary of Program Capabilities")
 
 ## Table of Contents
 - [Summary](#summary)
