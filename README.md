@@ -15,6 +15,13 @@ Fractal provides a convenient framework to estimate the fractal dimension of any
 ### 3D Input case 
 ![alt text](https://raw.githubusercontent.com/kaziida24/fractal/master/figures/3d_flowchart.png "Summary of Program Capabilities")
 
+### Capabilities
+
+| Input Data Dimension | Features | 
+| :------------------: | :------: |
+| 2D                   | fractal analysis core program         |
+| 3D                   | fractal analysis core code, visualization tool         | 
+
 ## Table of Contents
 - [Summary](#summary)
   - [C++ executables](#c-executables)
