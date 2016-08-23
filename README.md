@@ -34,6 +34,7 @@ Fractal provides a convenient framework to estimate the fractal dimension of any
   - [Running the fractal analysis program on a 3D dataset](#running-the-fractal-analysis-program-on-a-3d-dataset)
   - [Visualize a dataset using the PCL native viewer](#visualize-a-dataset-using-the-pcl-native-viewer)
   - [Getting help](#getting-help)
+- [Examples](#examples)
 - [Questions and Contact Information](#questions-and-contact-information)
 
 ## Summary
@@ -136,6 +137,10 @@ Example: Access help menu for *visualize*.
 ```bash
 $ ./visualize -h
 ```
+
+## Examples 
+
+Show a few test cases. 
 
 ## Questions and Contact Information 
 Project page: https://kaziida24.github.io/fractal/  
