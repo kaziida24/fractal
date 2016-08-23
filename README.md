@@ -9,18 +9,18 @@ Written by Kazuaki Iida
 
 Fractal provides a convenient framework to estimate the fractal dimension of any pattern contained in an image, or any geometry contained in a point cloud. 
 
+### Capabilities
+
+| Input Data Dimension | Features | 
+| :------------------: | :------: |
+| 2D                   | fractal analysis core program  |
+| 3D                   | fractal analysis core code, visualization tool (point clouds) | 
+
 ### 2D Input Case
 ![alt text](https://raw.githubusercontent.com/kaziida24/fractal/master/figures/2d_flowchart.png "Summary of Program Capabilities")
 
 ### 3D Input case 
 ![alt text](https://raw.githubusercontent.com/kaziida24/fractal/master/figures/3d_flowchart.png "Summary of Program Capabilities")
-
-### Capabilities
-
-| Input Data Dimension | Features | 
-| :------------------: | :------: |
-| 2D                   | fractal analysis core program         |
-| 3D                   | fractal analysis core code, visualization tool         | 
 
 ## Table of Contents
 - [Summary](#summary)
