@@ -261,8 +261,37 @@ int main (int argc, char** argv)
 	fclose(fp); 
 
 	printf("Step 4. Wrote results to %s.\n", outputFile.c_str());
-	/////////////////////////////////////////////////////////////////////////////////
+	printf("Use either plot_fractal.py or plot_fractal.m to post-process and generate a plot.\n"); 
+	printf("\n"); 
 
+	printf("\n"); 
+	printf("Python:\n"); 
+	printf("python plot_fractal.py %s %s\n", outputFile.c_str(), filename.c_str());
+	printf("\n"); 
+
+	printf("\n"); 
+	printf("MATLAB (in the MATLAB command window in this directory):\n"); 
+	printf("plot_fractal %s %s\n", outputFile.c_str(), filename.c_str()); 
+	printf("\n"); 
+
+	// Optional post-processing in Python
+
+	string user_ans; 
+
+	printf("Press y or n for 'yes' or 'no' to answer the following question.\n"); 
+	cout <<  "Would you like to post-process the results now in Python? (Y/n) "; 
+	getline(cin, user_ans); 
+
+	if (!strcmp(user_ans.c_str(), "y"))
+	{
+		string python_command = "python plot_fractal.py "+outputFile+" "+filename; 
+		printf("Post-processing in Python.\n"); 
+		system(python_command.c_str()); 
+	}
+	else
+	{
+		printf("Exiting program.\n"); 
+	}
 
 	// Exit program
 	return 0;

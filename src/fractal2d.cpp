@@ -143,7 +143,7 @@ int main(int argc, char** argv)
     printf("\n"); 
 
     printf("\n"); 
-    printf("MATLAB:\n"); 
+    printf("MATLAB (in the MATLAB command window in this directory):\n"); 
     printf("plot_fractal %s %s\n", results_file.c_str(), img_name.c_str()); 
     printf("\n"); 
 
