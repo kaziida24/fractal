@@ -7,13 +7,13 @@ Written by Kazuaki Iida
 
 ## Overview of Program
 
-Fractal provides a convenient framework to estimate the fractal dimension of any pattern contained in an image, or any geometry contained in a point cloud. 
+Fractal provides a convenient framework to estimate the fractal dimension of any pattern contained in an image, or any geometry contained in a point cloud using the box counting method. This framework is a command-line implementation of the MATLAB implementation found [here.](https://www.mathworks.com/matlabcentral/fileexchange/13063-boxcount/content/boxcount/html/demo.html)
 
 ### Capabilities
 
 | Input Data Dimension | Features | 
 | :------------------: | :------: |
-| 2D                   | fractal analysis core program  |
+| 2D                   | fractal analysis core program |
 | 3D                   | fractal analysis core code, visualization tool (point clouds) | 
 
 ### 2D Input Case
