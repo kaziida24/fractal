@@ -157,7 +157,7 @@ $ ./fractal2d fractal_img.png
 
 The on-screen instructions will tell you to press spacebar to continue. Please follow the instructions until it states that the analysis is complete. You will now have the option to post-process directly in Python. Post-processing produces the following plots. 
 
-![alt text](https://raw.githubusercontent.com/kaziida24/fractal/master/figures/test1_loglog.png) ![alt text](https://raw.githubusercontent.com/kaziida24/fractal/master/figures/text2_slope.png)
+![alt text](https://raw.githubusercontent.com/kaziida24/fractal/master/figures/test1_loglog.png) ![alt text](https://raw.githubusercontent.com/kaziida24/fractal/master/figures/test2_slope.png)
 
 On the left is the canonical fractal analysis plot showing a log-log plot of the number of boxes needed to fill the image and the corresponding bin size. The slope in the constant region of the slop plot is around 1.65. According to this result, the pattern contained in the image is indeed a fractal set since it has a noninteger fractal dimension that is larger than its topological dimension (1). The topological dimension is 1 since the branch can be approximated as a continuous curve.  
 
