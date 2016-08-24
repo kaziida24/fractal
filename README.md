@@ -5,9 +5,22 @@ Written by Kazuaki Iida
 
 *Read this in Japanese: [日本語版ガイド](README.ja.md)*  
 
-## Overview of Program
-
 Fractal provides a convenient framework to estimate the fractal dimension of any pattern contained in an image, or any geometry contained in a point cloud using the box counting method. This framework is a command-line implementation of the MATLAB implementation found [here](https://www.mathworks.com/matlabcentral/fileexchange/13063-boxcount/content/boxcount/html/demo.html). The motivation and background for the development of the code is described on the [project page](https://kaziida24.github.io/fractal). 
+
+## Table of Contents
+- [Summary](#summary)
+- [Dependencies](#dependencies)
+- [Installation](#installation)
+- [Usage](#usage)
+  - [Running the fractal analysis program on an image](#running-the-fractal-analysis-program-on-an-image)
+  - [Converting an ASCII file to a more PCL friendly PCD file](#converting-an-ascii-file-to-a-more-pcl-friendly-pcd-file)
+  - [Running the fractal analysis program on a 3D dataset](#running-the-fractal-analysis-program-on-a-3d-dataset)
+  - [Visualize a dataset using the PCL native viewer](#visualize-a-dataset-using-the-pcl-native-viewer)
+  - [Getting help](#getting-help)
+- [Examples](#examples)
+- [Questions and Contact Information](#questions-and-contact-information)
+
+## Summary
 
 ### Capabilities
 
@@ -22,24 +35,7 @@ Fractal provides a convenient framework to estimate the fractal dimension of any
 ### 3D Input case 
 ![alt text](https://raw.githubusercontent.com/kaziida24/fractal/master/figures/3d_flowchart.png "Summary of Program Capabilities")
 
-## Table of Contents
-- [Summary](#summary)
-  - [C++ executables](#c-executables)
-  - [Python and MATLAB scripts](#python-and-matlab-scripts)
-- [Dependencies](#dependencies)
-- [Installation](#installation)
-- [Usage](#usage)
-  - [Running the fractal analysis program on an image](#running-the-fractal-analysis-program-on-an-image)
-  - [Converting an ASCII file to a more PCL friendly PCD file](#converting-an-ascii-file-to-a-more-pcl-friendly-pcd-file)
-  - [Running the fractal analysis program on a 3D dataset](#running-the-fractal-analysis-program-on-a-3d-dataset)
-  - [Visualize a dataset using the PCL native viewer](#visualize-a-dataset-using-the-pcl-native-viewer)
-  - [Getting help](#getting-help)
-- [Examples](#examples)
-- [Questions and Contact Information](#questions-and-contact-information)
-
-## Summary
-
-### C\+\+ executables
+<!-- ### C\+\+ executables
 *fractal2d* - fractal analysis program for image (2D pattern)  
 *fractal3d* - fractal analysis program for 3D dataset  
 *visualize* - visualize a 3D dataset using PCL's native viewer  
@@ -51,7 +47,7 @@ point cloud visualizations.
 
 *plot_fractal.py* - post-process fractal analysis results by creating a plot and estimating the fractal dimension  
 *plot_fractal.m* - same as *plot_fractal.py* but in MATLAB instead of Python  
-*visualizeDataset.m* - renders any point cloud dataset using the MATLAB viewer. You will need the computer vision toolbox to use this.  
+*visualizeDataset.m* - renders any point cloud dataset using the MATLAB viewer. You will need the computer vision toolbox to use this.   -->
 
 ## Dependencies
 * CMake  
