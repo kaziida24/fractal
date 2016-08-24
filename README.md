@@ -22,8 +22,8 @@ Written by Kazuaki Iida
   - [Visualize a dataset using the PCL native viewer](#visualize-a-dataset-using-the-pcl-native-viewer)
   - [Getting help](#getting-help)
 - [Example Output](#example-output)
-	- [Compare with MATLAB implementation](#compare-with-matlab-implementation)
-	- [Short 2D example](#short-2d-example)
+	- [Compare with MATLAB Implementation](#compare-with-matlab-implementation)
+	- [Short 2D Example](#short-2d-example)
 - [Questions and Contact Information](#questions-and-contact-information)
 
 ## Summary
@@ -140,7 +140,9 @@ $ ./visualize -h
 
 ## Example Output
 
-Show quick 2D case. 
+### Compare with MATLAB Implementation 
+
+### Short 2D Example 
 
 ## Questions and Contact Information 
 Project page: https://kaziida24.github.io/fractal/  
