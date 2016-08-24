@@ -92,9 +92,8 @@ Call the *fractal2d* executable along with the filename of the input image. The 
 $ ./fractal2d image.jpg
 ```
 
-
 ### Converting an ASCII file to a more PCL friendly PCD file
-Call the *ascii2pcd* executable along with the filename of the dataset.  
+Call the *ascii2pcd* executable along with the filename of the dataset. If you have an ASCII point cloud file, this is the preceding step before the *fractal3d* executable is called. 
 
 Example: This command takes an ASCII file called *dataset.txt* and creates a PCD file called *dataset.pcd*. 
 ```bash
