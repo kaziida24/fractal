@@ -21,9 +21,7 @@ Written by Kazuaki Iida
   - [Running the fractal analysis program on a 3D dataset](#running-the-fractal-analysis-program-on-a-3d-dataset)
   - [Visualize a dataset using the PCL native viewer](#visualize-a-dataset-using-the-pcl-native-viewer)
   - [Getting help](#getting-help)
-- [Examples](#examples)
-	- [Compare with MATLAB Implementation](#compare-with-matlab-implementation)
-	- [Short 2D Example](#short-2d-example)
+- [Example](#example)
 - [Questions and Contact Information](#questions-and-contact-information)
 
 ## Summary
@@ -137,12 +135,7 @@ Example: Access help menu for *visualize*.
 $ ./visualize -h
 ```
 
-## Examples
-
-### Compare with MATLAB Implementation 
-
-
-### Short 2D Example 
+## Example
 
 This example will detail the procedure in estimating the fractal dimension of the pattern in the following image. 
 
