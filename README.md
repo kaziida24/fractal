@@ -21,7 +21,9 @@ Written by Kazuaki Iida
   - [Running the fractal analysis program on a 3D dataset](#running-the-fractal-analysis-program-on-a-3d-dataset)
   - [Visualize a dataset using the PCL native viewer](#visualize-a-dataset-using-the-pcl-native-viewer)
   - [Getting help](#getting-help)
-- [Examples](#examples)
+- [Example Output](#example-output)
+	- [Compare with MATLAB implementation](#compare-with-matlab-implementation)
+	- [Short 2D example](#short-2d-example)
 - [Questions and Contact Information](#questions-and-contact-information)
 
 ## Summary
@@ -51,22 +53,8 @@ Written by Kazuaki Iida
 | plot_fractal.m  | MATLAB | MATLAB version of post-processing program | 
 | visualizeDataset.m |  MATLAB | renders any ASCII point cloud dataset using MATLAB. You will need the [computer vision toolbox](http://www.mathworks.com/products/computer-vision/) to use this. |
 
-<!-- ### C\+\+ executables
-*fractal2d* - fractal analysis program for image (2D pattern)  
-*fractal3d* - fractal analysis program for 3D dataset  
-*visualize* - visualize a 3D dataset using PCL's native viewer  
-*ascii2pcd* - convert an ASCII point cloud to a PCD file 
-
-### Python and MATLAB scripts
-Additionally, Python and MATLAB scripts faciliate post-processing the fractal analysis results as well as provide an alternative to
-point cloud visualizations. 
-
-*plot_fractal.py* - post-process fractal analysis results by creating a plot and estimating the fractal dimension  
-*plot_fractal.m* - same as *plot_fractal.py* but in MATLAB instead of Python  
-*visualizeDataset.m* - renders any point cloud dataset using the MATLAB viewer. You will need the computer vision toolbox to use this.   -->
-
 ## Dependencies
-* CMake  
+* CMake (version 2.8 or higher)
 * PCL (for point cloud processing and visualization)
 * OpenCV (for 2D analysis and image operations)
 * Eigen
@@ -150,9 +138,9 @@ Example: Access help menu for *visualize*.
 $ ./visualize -h
 ```
 
-## Examples 
+## Example Output
 
-Show a few test cases. 
+Show quick 2D case. 
 
 ## Questions and Contact Information 
 Project page: https://kaziida24.github.io/fractal/  
