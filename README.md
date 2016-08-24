@@ -21,7 +21,7 @@ Written by Kazuaki Iida
   - [Running the fractal analysis program on a 3D dataset](#running-the-fractal-analysis-program-on-a-3d-dataset)
   - [Visualize a dataset using the PCL native viewer](#visualize-a-dataset-using-the-pcl-native-viewer)
   - [Getting help](#getting-help)
-- [Example Output](#example-output)
+- [Examples](#examples)
 	- [Compare with MATLAB Implementation](#compare-with-matlab-implementation)
 	- [Short 2D Example](#short-2d-example)
 - [Questions and Contact Information](#questions-and-contact-information)
@@ -36,10 +36,10 @@ Written by Kazuaki Iida
 | 3D (point cloud)     | fractal analysis core code | visualization tool (point clouds), point cloud file conversion |
 
 ### 2D Input Case
-![alt text](https://raw.githubusercontent.com/kaziida24/fractal/master/figures/2d_flowchart.png "Summary of Program Capabilities")
+![alt text](https://raw.githubusercontent.com/kaziida24/fractal/master/figures/2d_flowchart.png "2D Input Figure")
 
 ### 3D Input case 
-![alt text](https://raw.githubusercontent.com/kaziida24/fractal/master/figures/3d_flowchart.png "Summary of Program Capabilities")
+![alt text](https://raw.githubusercontent.com/kaziida24/fractal/master/figures/3d_flowchart.png "3D Input Figure")
 
 ### Executables
 
@@ -138,11 +138,18 @@ Example: Access help menu for *visualize*.
 $ ./visualize -h
 ```
 
-## Example Output
+## Examples
 
 ### Compare with MATLAB Implementation 
 
+
 ### Short 2D Example 
+
+This example will detail the procedure in estimating the fractal dimension of the pattern in the following image. 
+
+![alt text](https://raw.githubusercontent.com/kaziida24/fractal/master/images/fractal_img.png "Sample Image")
+
+
 
 ## Questions and Contact Information 
 Project page: https://kaziida24.github.io/fractal/  
