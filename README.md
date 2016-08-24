@@ -7,7 +7,7 @@ Written by Kazuaki Iida
 
 ## Overview of Program
 
-Fractal provides a convenient framework to estimate the fractal dimension of any pattern contained in an image, or any geometry contained in a point cloud using the box counting method. This framework is a command-line implementation of the MATLAB implementation found [here.](https://www.mathworks.com/matlabcentral/fileexchange/13063-boxcount/content/boxcount/html/demo.html)
+Fractal provides a convenient framework to estimate the fractal dimension of any pattern contained in an image, or any geometry contained in a point cloud using the box counting method. This framework is a command-line implementation of the MATLAB implementation found [here](https://www.mathworks.com/matlabcentral/fileexchange/13063-boxcount/content/boxcount/html/demo.html). A detailed motivation for the development of the code can found on the [project page](https://kaziida24.github.io/fractal). 
 
 ### Capabilities
 
