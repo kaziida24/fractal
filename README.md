@@ -5,10 +5,14 @@ Written by Kazuaki Iida
 
 *Read this in Japanese: [日本語版ガイド](README.ja.md)*  
 
-Fractal provides a convenient framework to estimate the fractal dimension of any pattern contained in an image, or any geometry contained in a point cloud using the box counting method. This framework is a command-line implementation of the MATLAB implementation found [here](https://www.mathworks.com/matlabcentral/fileexchange/13063-boxcount/content/boxcount/html/demo.html). The motivation and background for the development of the code is described on the [project page](https://kaziida24.github.io/fractal). 
+*Fractal* provides a convenient framework to estimate the fractal dimension of any pattern contained in an image, or any geometry contained in a point cloud using the box counting method. This framework is a command-line implementation of the MATLAB implementation found [here](https://www.mathworks.com/matlabcentral/fileexchange/13063-boxcount/content/boxcount/html/demo.html). The motivation and background for the development of the code is described on the [project page](https://kaziida24.github.io/fractal). 
 
 ## Table of Contents
 - [Summary](#summary)
+	- [Capabilties](#capabilities)
+	- [2D Input Case](#2d-input-case)
+	- [3D Input Case](#3d-input-case)
+	- [Executables](#executables)
 - [Dependencies](#dependencies)
 - [Installation](#installation)
 - [Usage](#usage)
@@ -34,6 +38,18 @@ Fractal provides a convenient framework to estimate the fractal dimension of any
 
 ### 3D Input case 
 ![alt text](https://raw.githubusercontent.com/kaziida24/fractal/master/figures/3d_flowchart.png "Summary of Program Capabilities")
+
+### Executables
+
+| Name | Programming language used | Description |
+| :--: | :-----------------------: | :---------: |
+| fractal2d | C++ | fractal analysis program for image (2D pattern) |
+| fractal3d | C++ | fractal analysis program for 3D dataset | 
+| visualize | C++ | visualize a 3D dataset using PCL's native viewer |
+| ascii2pcd | C++ | convert an ASCII point cloud to a PCD file | 
+| plot_fractal.py | Python | post-process fractal analysis results by creating a plot to help estimate the fractal dimension | 
+| plot_fractal.m  | MATLAB | MATLAB version of post-processing program | 
+| visualizeDataset.m |  MATLAB | renders any ASCII point cloud dataset using MATLAB. You will need the [computer vision toolbox](http://www.mathworks.com/products/computer-vision/) to use this. |
 
 <!-- ### C\+\+ executables
 *fractal2d* - fractal analysis program for image (2D pattern)  
