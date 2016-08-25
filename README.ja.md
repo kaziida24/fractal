@@ -33,7 +33,7 @@
 
 ### 入力データが二次元の場合
 
-![alt text](https://raw.githubusercontent.com/kaziida24/fractal/master/figures/2d_flowchart.png "2D Input Figure")
+![alt text](https://raw.githubusercontent.com/kaziida24/fractal/master/figures/2d_flowchart_ja.png "二次元インプット")
 
 ### 入力データが三次元の場合
 
