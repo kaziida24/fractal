@@ -37,7 +37,7 @@
 
 ### 入力データが三次元の場合
 
-![alt text](https://raw.githubusercontent.com/kaziida24/fractal/master/figures/3d_flowchart.png "3D Input Figure")
+![alt text](https://raw.githubusercontent.com/kaziida24/fractal/master/figures/3d_flowchart_ja.png "三次元インプット")
 
 ### プログラムの表とその役割
 
