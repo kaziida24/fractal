@@ -50,7 +50,7 @@
 | ascii2pcd | C++ | PCLが扱えるPCDファイルをASCIIポイントクラウドファイルから作成するプログラム | 
 | plot_fractal.py | Python | フラクタル解析の結果をもとにフラクタル次元の推定グラフを作るプログラム | 
 | plot_fractal.m | MATLAB | 上記のプログラムと同じく、MATLAB用のプログラム | 
-| visualizeDataset.m | MATLAB | 特定されたポイントクラウドファイルを視覚化するMATLAB用のプログラム（[コンピュータビジョンツールボックス](http://www.mathworks.com/products/computer-vision/)が必要）|
+| visualizeDataset.m | MATLAB | 特定されたポイントクラウドファイルを視覚化するMATLAB用のプログラム（[コンピュータビジョンツールボックス](http://jp.mathworks.com/products/computer-vision/index.html?s_tid=gn_loc_drop)が必要）|
 
 <!-- ### C++ プログラム
 
