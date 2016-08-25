@@ -39,7 +39,18 @@
 
 ![alt text](https://raw.githubusercontent.com/kaziida24/fractal/master/figures/3d_flowchart_ja.png "三次元インプット")
 
-### プログラムの表とその役割
+### プログラムの役割表
+
+
+| プログラム名 | 使用言語 | 備考 | 
+| :--------: | :-----: | :--: |
+| fractal2d | C++ | 二次元データ（画像）専用のフラクタル解析コアプログラム |
+| fractal3d | C++ | 三次元データ専用のフラクタル解析コアプログラム | 
+| visualize | C++ | ポイントクラウドを視覚化するプログラム | 
+| ascii2pcd | C++ | PCLが扱えるPCDファイルをASCIIポイントクラウドファイルから作成するプログラム | 
+| plot_fractal.py | Python | フラクタル解析の結果をもとにフラクタル次元の推定グラフを作るプログラム | 
+| plot_fractal.m | MATLAB | 上記のプログラムと同じく、MATLAB用のプログラム | 
+| visualizeDataset.m | MATLAB | 特定されたポイントクラウドファイルを視覚化するMATLAB用のプログラム（[コンピュータビジョンツールボックス](http://www.mathworks.com/products/computer-vision/)が必要）|
 
 <!-- ### C++ プログラム
 
