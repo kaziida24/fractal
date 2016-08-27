@@ -147,7 +147,11 @@ This image must first be saved in the *images* folder. This is the default direc
 $ ./fractal2d fractal_img.png 
 ```
 
-The on-screen instructions will tell you to press spacebar to continue. Please follow the instructions until it states that the analysis is complete. You will now have the option to post-process directly in Python. Post-processing produces the following plots. 
+The on-screen instructions will tell you to press spacebar to continue. Please follow the instructions until it states that the analysis is complete. 
+
+![alt text](https://raw.githubusercontent.com/kaziida24/fractal/master/figures/fractal2d_example1.png)
+
+You will now have the option to post-process directly in Python. Post-processing produces the following plots. 
 
 ![alt text](https://raw.githubusercontent.com/kaziida24/fractal/master/figures/test1_loglog.png) ![alt text](https://raw.githubusercontent.com/kaziida24/fractal/master/figures/test2_slope.png)
 
