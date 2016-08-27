@@ -4,7 +4,7 @@
 
 *英語版を閲覧: [English version](README.md)*
 
-**フラクタル**とはボックスカウント法を使用して一般的な模様や形のフラクタル次元を推定するコマンドライン専用ツールであり、[こちら](https://www.mathworks.com/matlabcentral/fileexchange/13063-boxcount/content/boxcount/html/demo.html)のMATLAB用のプログラムに基づいて作成された。このプログラムの開発に関する背景やフラクタルの数学的な概念は[プロジェクトHP](https://kaziida24.github.io/fractal)でご自由に参照してください。
+**フラクタル**とはボックスカウント法を使用して一般的な模様や形のフラクタル次元を推定するコマンドライン専用ツールであり、[こちら](https://www.mathworks.com/matlabcentral/fileexchange/13063-boxcount/content/boxcount/html/demo.html)のMATLAB用のプログラムに基づいて作成されました。このプログラムの開発に関する背景やフラクタルの数学的な概念は[プロジェクトHP](https://kaziida24.github.io/fractal)でご自由に参照してください。
 
 ## 目次
 - [概要](#概要)  
@@ -138,6 +138,20 @@ $ ./ascii2pcd -h
 ```
 
 ## 使用例
+
+これから下の画像内の模様のフラクタル次元を推定する手順をご紹介します。
+
+![alt text](https://raw.githubusercontent.com/kaziida24/fractal/master/images/fractal_img.png "サンプル画像")
+
+初めに、解析する画像を全て*images*のフォルダーに保存してください。*fractal2d*は特定された画像ファイルをこのフォルダー内から探します。プログラムを実行する際、解析する画像のファイル名も打ち込むことを忘れないようご注意ください。この場合、ファイル名は**fractal_img.png**です。
+
+```bash
+$ ./fractal2d fractal_img.png 
+```
+
+プログラム実行後、画面上にさらに手順が表示されます。
+
+
 
 ## ご質問のある方
 ご質問のある方は下記のプロジェクトページをご覧になってください。
