@@ -149,9 +149,15 @@ $ ./ascii2pcd -h
 $ ./fractal2d fractal_img.png 
 ```
 
-プログラム実行後、画面上にさらに手順が表示されます。
+プログラム実行後、画面上にさらに指示が表示されます。次に進むためにスペースキーを押して、解析完了 (analysis complete)が出るまで画面上の指示に従ってください。
 
+![alt text](https://raw.githubusercontent.com/kaziida24/fractal/master/figures/fractal2d_example1.png)
 
+フラクタル解析終了後、Pythonで直接ポストプロセスする選択があります。ポストプロセスすると下のグラフが作成されます。
+
+![alt text](https://raw.githubusercontent.com/kaziida24/fractal/master/figures/test1_loglog.png) ![alt text](https://raw.githubusercontent.com/kaziida24/fractal/master/figures/test2_slope.png)
+
+上の方のグラフはフラクタル解析で作成される典型的なプロットであり、ボックスカウント法のより定められたボックスの大きさと数の関係を表しています。ボックスの大きさは指数関数上に変化するため、対数目盛でグラフを作成すると直線となります。下の方のグラフは直線の勾配（傾き）を表しており、この値が画像内の模様のフラクタル次元に当たります。グラフの勾配の値を伺うとフラクタル次元は約1.65であります。結果、フラクタル次元が整数でないことと、模様の位相次元より大きいということから画像内の木の枝の模様はフラクタルであるという結論に至ります。この場合、木の分枝は曲線で表すことが出来るので位相次元は１であります。
 
 ## ご質問のある方
 ご質問のある方は下記のプロジェクトページをご覧になってください。
