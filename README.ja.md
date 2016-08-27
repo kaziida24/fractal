@@ -1,4 +1,4 @@
-# フラクタル: あらゆる模様や形のフラクタル次元を推定するソフト
+# フラクタル: 模様や三次元構造のフラクタル次元を推定するソフト
 ステータス：プロトタイプ  
 飯田一鑑  
 
@@ -51,19 +51,6 @@
 | plot_fractal.py | Python | フラクタル解析の結果をもとにフラクタル次元の推定グラフを作るプログラム | 
 | plot_fractal.m | MATLAB | 上記のプログラムと同じく、MATLAB用のプログラム | 
 | visualizeDataset.m | MATLAB | 特定されたポイントクラウドファイルを視覚化するMATLAB用のプログラム（[コンピュータビジョンツールボックス](http://jp.mathworks.com/products/computer-vision/index.html?s_tid=gn_loc_drop)が必要）|
-
-<!-- ### C++ プログラム
-
-*fractal* - フラクタル解析のコアプログラム。  
-*visualize* - ポイントクラウドファイルをPCLを使って視覚化するプログラム。  
-*ascii2pcd* - PCLが扱えるPCDファイルをASCIIファイルから作成するプログラム。  
-
-### PythonとMATLAB用のプログラム
-
-*plot_fractal.py* - フラクタル解析の結果をもとにフラクタル次元の推定グラフを作るプログラム。  
-*plot_fractal.m* - *plot_fractal.py*と同じく、MATLAB用のプログラム。
-*visualizeDataset.m* - 特定されたポイントクラウドファイルを視覚化するMATLAB用のプログラム。こちらを使うには
-コンピュータービジョンツールボックスが必要。 -->
 
 ## 必須ライブラリ  
 * CMake（バージョン2.8以後）
