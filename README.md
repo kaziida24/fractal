@@ -5,7 +5,7 @@ Written by Kazuaki Iida
 
 *Read this in Japanese: [日本語版ガイド](README.ja.md)*  
 
-**Fractal** provides a convenient framework to estimate the fractal dimension of any pattern contained in an image, or any geometry contained in a point cloud using the box counting method. This framework is a command-line implementation of the MATLAB implementation found [here](https://www.mathworks.com/matlabcentral/fileexchange/13063-boxcount/content/boxcount/html/demo.html). The motivation and background for the development of the code is described on the [project page](https://kaziida24.github.io/fractal). 
+**Fractal** provides a convenient framework to estimate the fractal dimension of any pattern contained in an image, or any geometry contained in a point cloud using the box counting method. This framework is a command-line implementation of the MATLAB implementation found [here](https://www.mathworks.com/matlabcentral/fileexchange/13063-boxcount/content/boxcount/html/demo.html). 
 
 ## Table of Contents
 - [Summary](#summary)
@@ -158,5 +158,4 @@ You will now have the option to post-process directly in Python. Post-processing
 On the top is the canonical fractal analysis plot showing a log-log plot of the number of boxes needed to fill the image and the corresponding bin size. The slope in the constant region of the slope plot is around 1.65. According to this result, the pattern contained in the image is indeed a fractal set since it has a noninteger fractal dimension that is larger than its topological dimension (1). The topological dimension is 1 since the branch can be approximated as a continuous curve.  
 
 ## Questions and Contact Information 
-Project page: https://kaziida24.github.io/fractal/  
 Email: kiida2@illinois.edu
