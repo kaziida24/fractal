@@ -2,7 +2,7 @@
 ステータス：プロトタイプ  
 飯田一鑑  
 
-*英語版を閲覧: [English version](README.md)*
+*英語版を閲覧: [English version (main page)](README.md)*
 
 **フラクタル**とはボックスカウント法を使用して一般的な模様や形のフラクタル次元を推定するコマンドライン専用ツールであり、[こちら](https://www.mathworks.com/matlabcentral/fileexchange/13063-boxcount/content/boxcount/html/demo.html)のMATLAB用のプログラムに基づいて作成されました。
 
